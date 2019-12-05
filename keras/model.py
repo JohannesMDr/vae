@@ -6,6 +6,8 @@ from keras.metrics import binary_crossentropy
 from keras import backend as K
 import numpy as np
 
+from .resblock import ResBlock
+
 
 def build_model(input_shape, latent_dim, optimizer=Adam(lr=8e-4, beta_1=0.5, beta_2=0.9)):
   #encoder
